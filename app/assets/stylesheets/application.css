@@ -1,0 +1,55 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+ .modal-header, .modal-footer{
+ 	background-color: black;
+ 	border-bottom:none !important;
+ 		}
+.modal-dialog{
+	display: table;
+	position: relative;
+	overflow-x: auto;
+	max-width: 700px;
+}
+.modal-body{
+		padding: 0 !important;
+		border-bottom-color: #53e26a !important;	 
+}
+
+.special {
+    background-color: white;
+    color: #333333;
+    text-decoration: none;
+    background-position: 0;
+    transition: none;
+}
+.special:hover{
+    background-color: #53e26a;
+    color: #333333;
+    text-decoration: none;
+    background-position: 0;
+    transition: none;
+}
+.navbutton {
+    background-color: transparent;
+    color: #333333;
+    text-decoration: none;
+    background-position: 0;
+    transition: none;
+}
+.navbutton:hover{
+    background-color: #53e26a;
+    color: #333333;
+    text-decoration: none;
+    background-position: 0;
+    transition: none;
+}
+
+.navbar-brand:hover{
+    background-color: #53e26a!important
+}
+
+.mySlides{
+	width:100%;
+}

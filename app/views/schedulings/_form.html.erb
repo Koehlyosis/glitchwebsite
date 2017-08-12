@@ -1,0 +1,23 @@
+<%= form_with(model: scheduling, local: true) do |form| %>
+  <% if scheduling.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(scheduling.errors.count, "error") %> prohibited this scheduling from being saved:</h2>
+
+      <ul>
+      <% scheduling.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div style="color: #5fd14b;font-size: 100px; font-family: 'VT323', monospace;" class="field">
+    <%= form.label :timeslot %>
+    <p>Date: <input style="background-color: white"; type="text" id="datepicker"></p>
+  
+  </div>
+
+  <div  style="color: #5fd14b;" class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
